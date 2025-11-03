@@ -10,9 +10,9 @@ let myDate = new Date();
 
 
 let myCreate = new Date(2025, 11, 21);
-let myCreate2 = new Date(2025, 11, 21, 00);
-console.log(myCreate2.toLocaleString()) // months start from 0//
+let myCreate2 = new Date(2025, 11, 21, 0);
+// console.log(myCreate2.toLocaleString()) // months start from 0//
 
-let myCreate3 = new Date("2005-12-21")
+let myCreate3 = new Date("2005-09-09")
 // let myCreate3 = new Date("21/12/2005")
-console.log(myCreate3.toLocaleString)
+console.log(myCreate3.toLocaleString());
