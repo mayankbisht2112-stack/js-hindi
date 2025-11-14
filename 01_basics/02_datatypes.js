@@ -1,6 +1,6 @@
 "use strict"; // treat all code as JS newer version
 
-//alert(3+3)//it will give error because we are using node js not browser
+// alert(3+3)//it will give error because we are using node js not browser
 
 //dont ruin your code readability//
 
@@ -20,7 +20,8 @@
 //object => talk about later
  
 console.log(typeof "mayank");
-console.log(typeof null);// object due to a historical implementation bug//
+console.log(typeof null);// object due to a historical implementation bug// When JS was first created, values were stored in a way where objects had a special tag (type tag = 0).
+//  null accidentally got the same tag, so JavaScript still reports:
 console.log(typeof undefined);// undefined //
 
 
