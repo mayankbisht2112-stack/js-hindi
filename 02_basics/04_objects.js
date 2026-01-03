@@ -16,15 +16,36 @@ const obj4={...obj1,...obj2}
 // console.log(obj3);
 // console.log(obj4);
 // console.log(tinderUser);
-const tinderUser = {}
+// const tinderUser = {}
 
-tinderUser.id = "123abc"
-tinderUser.name = "Sammy"
-tinderUser.isLoggedIn = false
+// tinderUser.id = "123abc"
+// tinderUser.name = "Sammy"
+// tinderUser.isLoggedIn = false
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+const course={
+    coursename:"JS",
+    price:999,
+    courseInstructor:"hitesh"
+};
+const {courseInstructor:Instructor}=course;
+console.log(course.courseInstructor);
+console.log(Instructor);
 
+//JSON SYNTAX//
+// IN OBJECTS
+// {
+//     "name": "mayank",
+//     "course":"JS",
+//     "price":0
+// }
+//IN ARRAY
+// [
+//     {},
+//     {},
+//     {}
+// ]
