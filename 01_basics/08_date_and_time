@@ -1,29 +1,29 @@
 // Date
 
 
-// let myDate = new Date();
-// console.log(myDate.toString()) // current date //
+let myDate = new Date();
+console.log(myDate.toString()) // current date //
 // console.log(myDate.toDateString())
-// console.log(myDate.toDateString());
-// console.log(myDate.toLocaleString());
-// console.log(typeof myDate);
+console.log(myDate.toDateString());
+console.log(myDate.toLocaleString());
+console.log(typeof myDate);
 
 
-// let myCreate = new Date(2025, 11, 21);
-// let myCreate2 = new Date(2025, 11, 21, 0);
-// console.log(myCreate2.toLocaleString()) // months start from 0//
+let myCreate = new Date(2025, 11, 21);
+let myCreate2 = new Date(2025, 11, 21, 0);
+console.log(myCreate2.toLocaleString()) // months start from 0//
 
 let myCreate3 = new Date("2005-09-09")
 // let myCreate3 = new Date("21/12/2005")
 // console.log(myCreate3.toLocaleString());
 
 let myTimestamp = Date.now()
-// console.log(myTimestamp);
-// console.log(myCreate3.getTime());//exact timestamp from 1 jan 1970 in milliseconds//
+console.log(myTimestamp);
+console.log(myCreate3.getTime());//exact timestamp from 1 jan 1970 in milliseconds//
 console.log(Math.floor(myTimestamp/1000));// In seconds //
 let newDate = new Date()
-// console.log(newDate.getDay()+1);
-// console.log(newDate.getMonth()+1);
+console.log(newDate.getDay()+1);//7th day of the week saturday
+console.log(newDate.getMonth()+1);//first month 
 
 
 console.log(newDate.toLocaleString('default',{

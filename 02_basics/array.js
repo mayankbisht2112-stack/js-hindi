@@ -1,6 +1,6 @@
 //Arrays//
-// const myArr=[1,2,3,4,"mayank"]
-// console.log(myArr);
+const myArr=[1,2,3,4,"mayank"]
+console.log(myArr);
 
 // When you copy an array or object in JavaScript, you can do it in two ways:
 // Shallow Copy: If the object/array contains nested objects or arrays, those inner references are shared, not copied.
@@ -15,8 +15,8 @@
 // console.log(myArr2);
 
 const myArr3=[9,8,7,6,5]
-// myArr3.unshift(1)
-// console.log(myArr3);
+myArr3.unshift(1)
+console.log(myArr3);
 // myArr3.shift();
 // console.log(myArr3);
 // console.log(myArr3.includes(9));

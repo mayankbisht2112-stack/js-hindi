@@ -11,6 +11,8 @@
 // console.log(null>=0);//true
 // console.log(null>0);//false
 // console.log(null<=0);//true
+// console.log(null<0);//false
+
 // The reason is that the equality check(==) and comparision(>=,>) work diffrently, comparisions convert null into num 0 //
 
 

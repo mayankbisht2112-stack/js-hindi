@@ -14,8 +14,8 @@ var name="mayank"
 }
 console.log(name) */
 // even if we declare name inside the for loop it still accessable outside loop 
-// password=434343
-email = "hjhjhj@gmail.com"
+// password=434343;
+email = "hjhjhj@gmail.com";
 console.log(accountstate);
 console.log(email);
 console.table([email, accountcity, accountstate, password])
