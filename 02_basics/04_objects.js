@@ -10,11 +10,15 @@ const regularuser={
 const obj1={1:"a",2:"b"}
 const obj2={3:"c",4:"d"}
 const obj3=Object.assign({},obj1,obj2)
+console.log(obj3);
+console.log(obj1);
 //Object.assign(target, ...sourceObjects);//
 //so thats why we write {} here as target and obj1,2 as source
 const obj4={...obj1,...obj2}
 // console.log(obj3);
 // console.log(obj4);
+// console.log(obj1);
+// console.log(obj2);
 // console.log(tinderUser);
 // const tinderUser = {}
 
@@ -27,6 +31,8 @@ const obj4={...obj1,...obj2}
 // console.log(Object.entries(tinderUser));
 
 // console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+// destructuring objects//
 const course={
     coursename:"JS",
     price:999,

@@ -32,10 +32,7 @@ const user={
 function Handleobj(anyobj){
     console.log(`username is ${anyobj.username} and the price is ${anyobj.price}`)//carefully check that type is same and in this case price is there in obj or not
 }
-// Handleobj(user);
-
-
-
+Handleobj(user);
 const myNewArr=[200,300,400]
 function getSecondValue(Arr){
     return Arr[1];

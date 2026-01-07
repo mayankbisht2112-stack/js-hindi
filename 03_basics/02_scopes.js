@@ -9,26 +9,26 @@ var c=30;
 
 
 // NESTED SCOPES//
-// function one(){
-//     const username="mayank";
-//     function two(){
-//         const website="Github";
-//         console.log(username);
-//     }
+function one(){
+    const username="mayank";
+    function two(){
+        const website="Github";
+        console.log(username);
+    }
     // console.log(website);
     
 
-    // two()
-// }
-// one()
+    two()
+}
+one()
  
 // SAME HAPPENS IN IF ELSE //
-if(true){
-    const username="mayank"
-    if(username==="mayank"){
-        const website=" youtube"
-        console.log(username + website)
-    }
+// if(true){
+//     const username="mayank"
+//     if(username==="mayank"){
+//         const website=" youtube"
+//         console.log(username + website)
+//     }
     // console.log(website)
-}
+// }
 // console.log(username)
