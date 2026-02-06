@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Web API</h1>
+    <button id="start">
+        START
+    </button>
+    <button id="stop">
+        STOP
+    </button>
+</body>
+<script>
+    // setTimeout(()=>{
+    //     console.log("mayank");
+        
+    // },2000)
+    // const changetext=()=>{
+    //     document.querySelector('h1').innerHTML="changed to javascript"
+    // }
+    // const changeMe=setTimeout(changetext,2000)
+    // document.querySelector('#stop').addEventListener('click',function(){
+    //     clearTimeout(changeMe)
+    //     console.log('STOPPED');
+        
+    // })
+    let MyInterval;
+    document.querySelector('#start').addEventListener('click',()=>{
+        MyInterval=setInterval(()=>{
+            console.log("hiiiiii");
+        },1000)
+    })
+    document.querySelector('#stop').addEventListener('click',()=>{
+        clearInterval(MyInterval);
+    })
+    
+</script>
+</html>

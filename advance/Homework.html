@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Card */
+.card{
+    background:white;
+    width:320px;
+    border-radius:20px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.25);
+    text-align:center;
+    padding:25px;
+    transition:0.3s ease;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+/* Image */
+.card img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:15px;
+}
+
+/* Text */
+.card h2{
+    margin:10px 0 5px;
+}
+
+.card p{
+    color:gray;
+    font-size:14px;
+    margin-bottom:20px;
+}
+
+/* Button */
+.card button{
+    padding:10px 20px;
+    border:none;
+    border-radius:25px;
+    background:#667eea;
+    color:white;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.card button:hover{
+    background:#5563d1;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h2>hiteshchoudhary</h2>
+    <p>Homework</p>
+    <button id="start">PRESS TO SEE ME</button>
+    <div id="photo"></div>
+    <div id="follower"></div>
+</div>
+
+</body>
+<script>
+    document.querySelector('#start').addEventListener('click',()=>{
+    const requestURL='https://api.github.com/users/hiteshchoudhary';
+   const xhr= new XMLHttpRequest();
+    xhr.open('GET',requestURL);
+    xhr.onreadystatechange=function(){
+        if(xhr.readyState===4  && xhr.status === 200){
+        const data=JSON.parse(this.responseText)
+        const img=document.createElement('img');
+        img.src=data.avatar_url;
+        document.querySelector('#photo').innerHTML=" ";
+        document.querySelector('#photo').appendChild(img)
+        const text=document.createTextNode('Followers: '+ data.followers);
+        document.querySelector('#follower').appendChild(text);
+    }
+    const myimg=document.querySelector('#start')
+}
+xhr.send();
+});
+</script>
+</html>

@@ -14,11 +14,12 @@ const p=document.createElement('p')
  let playGame=true;
 
  if(playGame){
-    submit.addEventListener('click',function(e){
+    submit.addEventListener('click',function(e){ 
         e.preventDefault()
-        const guess=parseInt(userInput.value)
+        const guess=parseInt(userInput.value) // here we have convert the input text into int
         console.log(guess)
-        validateGuess(guess)
+        validateGuess(guess)// and now we'll pass this guess into validate guess to check the guess is of 
+        // correct datatype and in the correct range
     });
  }
 
